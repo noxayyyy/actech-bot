@@ -1,0 +1,56 @@
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\ACTECH Bot.exe
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\ACTECH Bot.deps.json
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\ACTECH Bot.runtimeconfig.json
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\ACTECH Bot.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\ACTECH Bot.pdb
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Discord.Addons.Hosting.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Discord.Net.Commands.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Discord.Net.Core.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Discord.Net.Interactions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Discord.Net.Rest.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Discord.Net.Webhook.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Discord.Net.WebSocket.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Hosting.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\System.Interactive.Async.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\System.Linq.Async.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\System.Reactive.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.csproj.AssemblyReference.cache
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.AssemblyInfoInputs.cache
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.AssemblyInfo.cs
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.csproj.CoreCompileInputs.cache
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.csproj.CopyComplete
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\refint\ACTECH Bot.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.pdb
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ACTECH Bot.genruntimeconfig.cache
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\obj\Debug\net6.0\ref\ACTECH Bot.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\appsettings.json

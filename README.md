@@ -1,2 +1,2 @@
-# actech bot
- A multi-purpose Discord bot initially made to manage roles and channels for the computer society's inter-school event.
+# ACTECH-Bot
+ A Discord Bot initially made for managing channels and roles in the computer society's event server.

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ACTECH</id>
+    <version>1.0.0</version>
+    <authors>ACTECH</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="DSharpPlus" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="DSharpPlus.CommandsNext" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="DSharpPlus.Interactivity" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="DSharpPlus.VoiceNext" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="Discord.Addons.Hosting" version="5.2.0" exclude="Build,Analyzers" />
+        <dependency id="Discord.Addons.ShukaInteractive" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Discord.Net" version="3.9.0" exclude="Build,Analyzers" />
+        <dependency id="Discord.Net.Commands" version="3.9.0" exclude="Build,Analyzers" />
+        <dependency id="Discord.Net.Core" version="3.9.0" exclude="Build,Analyzers" />
+        <dependency id="Discord.Net.WebSocket" version="3.9.0" exclude="Build,Analyzers" />
+        <dependency id="DiscordInteractivity" version="1.0.1.1" exclude="Build,Analyzers" />
+        <dependency id="NetEscapades.Configuration.Yaml" version="2.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\ACTECH.runtimeconfig.json" target="lib\net6.0\ACTECH.runtimeconfig.json" />
+    <file src="C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Debug\net6.0\ACTECH.dll" target="lib\net6.0\ACTECH.dll" />
+  </files>
+</package>
