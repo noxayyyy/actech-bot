@@ -485,7 +485,7 @@ namespace ACTECH.Modules
 				AUDIO_CLIENT = await channel.ConnectAsync();
 			
 			if (!TOKEN.CanBeCanceled)
-				TOKEN_SOURCE.TryReset();
+				TOKEN_SOURCE = new CancellationTokenSource();
 
 			await PlayHandlerAsync(TOKEN);
 		}
@@ -500,7 +500,7 @@ namespace ACTECH.Modules
 				{
 					await PlayAsync(cancelToken);
 				}, cancelToken);
-				_task.Wait(token);
+				_task.Wait();
 				if (token.IsCancellationRequested)
 				{
 					tokenSource.Cancel();
@@ -514,7 +514,7 @@ namespace ACTECH.Modules
 		{
 			var search = new YouTubeService(new BaseClientService.Initializer()
 			{
-				ApiKey = "API_KEY"
+				ApiKey = "AIzaSyBFM2L9El6bGA92P7kuOsg0Ao0HFBmcvNk"
 			});
 			var searchRequest = search.Search.List("snippet");
 			searchRequest.Q = query;
@@ -533,6 +533,8 @@ namespace ACTECH.Modules
 
 		private async Task PlayAsync(CancellationToken token)
 		{
+			CancellationTokenSource tokenSource = new CancellationTokenSource();
+			CancellationToken flushToken = tokenSource.Token;
 			var queue = URL_QUEUE.ToList();
 			foreach(var video in queue) 
 			{
@@ -556,30 +558,34 @@ namespace ACTECH.Modules
 					{ 
 						var _task = Task.Run(async () => 
 						{
-							await thingy.FlushAsync(token); 
+							await thingy.FlushAsync(flushToken); 
 						});
 						_task.Wait(token);
 					}
+				}
+				if (token.IsCancellationRequested)
+				{
+					tokenSource.Cancel();
 				}
 				URL_QUEUE.RemoveFirst();
 			}
 		}
 
-		[Command("skip")]
-		[Alias("s")]
-		[EnabledInDm(false)]
+		//[Command("skip")]
+		//[Alias("s")]
+		//[EnabledInDm(false)]
 		public async Task SkipAsync()
 		{
 			TOKEN_SOURCE.Cancel();
 			URL_QUEUE.RemoveFirst();
-			TOKEN_SOURCE.TryReset();
+			TOKEN_SOURCE = new CancellationTokenSource();
 			await PlayHandlerAsync(TOKEN);
 		}
 
 		[Command("leave")]
 		[Alias("dc", "die", "fuckoff", "disconnect")]
 		[EnabledInDm(false)]
-		public async Task LeaveAsync()
+		public async Task LeaveVCAsync()
 		{
 			try { var check_channel = (Context.Guild.CurrentUser as IVoiceState).VoiceChannel; }
 			catch (Exception ex) { Console.WriteLine(ex.ToString()); return; }
@@ -596,7 +602,13 @@ namespace ACTECH.Modules
 			await ReplyAsync("Bye!");
 			TOKEN_SOURCE.Cancel();
 			URL_QUEUE.Clear();
-			TOKEN_SOURCE.TryReset();
+		}
+
+		[Command("clear")]
+		[EnabledInDm(false)]
+		public async Task ClearQueueAsync()
+		{
+			URL_QUEUE.Clear();
 		}
 		//[Command("redoteamperms")]
 		//[EnabledInDm(false)]
