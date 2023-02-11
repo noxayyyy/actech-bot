@@ -514,7 +514,7 @@ namespace ACTECH.Modules
 		{
 			var search = new YouTubeService(new BaseClientService.Initializer()
 			{
-				ApiKey = "AIzaSyBFM2L9El6bGA92P7kuOsg0Ao0HFBmcvNk"
+				ApiKey = "YT_API_KEY"
 			});
 			var searchRequest = search.Search.List("snippet");
 			searchRequest.Q = query;
