@@ -70,7 +70,7 @@ namespace ACTECH
 						.AddSingleton<InteractivityService>()
 						.AddSingleton(new YouTubeService(new BaseClientService.Initializer()
 						{
-							ApiKey = "YT_API_KEY",
+							ApiKey = "API_KEY",
 							ApplicationName = "APPLICATION_NAME"
 						}));
 				})

@@ -49,21 +49,25 @@
               "target": "Package",
               "version": "[3.6.0, )"
             },
+            "Concentus": {
+              "target": "Package",
+              "version": "[1.1.7, )"
+            },
             "DSharpPlus": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.4.0, )"
             },
             "DSharpPlus.CommandsNext": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.4.0, )"
             },
             "DSharpPlus.Interactivity": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.4.0, )"
             },
             "DSharpPlus.VoiceNext": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[4.4.0, )"
             },
             "Discord.Addons.Hosting": {
               "target": "Package",
@@ -75,19 +79,19 @@
             },
             "Discord.Net": {
               "target": "Package",
-              "version": "[3.9.0, )"
+              "version": "[3.10.0, )"
             },
             "Discord.Net.Commands": {
               "target": "Package",
-              "version": "[3.9.0, )"
+              "version": "[3.10.0, )"
             },
             "Discord.Net.Core": {
               "target": "Package",
-              "version": "[3.9.0, )"
+              "version": "[3.10.0, )"
             },
             "Discord.Net.WebSocket": {
               "target": "Package",
-              "version": "[3.9.0, )"
+              "version": "[3.10.0, )"
             },
             "DiscordInteractivity": {
               "target": "Package",
@@ -95,11 +99,11 @@
             },
             "Google.Apis.YouTube.v3": {
               "target": "Package",
-              "version": "[1.58.0.2874, )"
+              "version": "[1.60.0.2945, )"
             },
             "NetEscapades.Configuration.Yaml": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.0.0, )"
             },
             "VideoLibrary": {
               "target": "Package",
@@ -111,7 +115,7 @@
             },
             "YoutubeExplode": {
               "target": "Package",
-              "version": "[6.2.5, )"
+              "version": "[6.2.12, )"
             }
           },
           "imports": [

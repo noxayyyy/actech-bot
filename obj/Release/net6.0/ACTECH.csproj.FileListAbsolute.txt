@@ -18,7 +18,6 @@ C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\DSharpPlus.
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\DSharpPlus.CommandsNext.dll
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\DSharpPlus.Interactivity.dll
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\DSharpPlus.VoiceNext.dll
-C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\Emzi0767.Common.dll
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\Microsoft.Extensions.Configuration.dll
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\Microsoft.Extensions.Configuration.Binder.dll
@@ -79,3 +78,5 @@ C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\taglib-shar
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\libvideo.dll
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\YoutubeExplode.dll
 C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\YouTubeSearch.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\Concentus.dll
+C:\Users\momin\source\repos\ACTECH Bot\ACTECH Bot\bin\Release\net6.0\System.Collections.Immutable.dll

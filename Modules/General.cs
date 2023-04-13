@@ -48,10 +48,7 @@ namespace ACTECH.Modules
 		static ulong EVERYONE_ID;
 		static readonly ulong ACTECH_ID = 1064831455454314537;
 		static LinkedList<string> URL_QUEUE = new LinkedList<string>();
-		static IAudioClient AUDIO_CLIENT;
-		static CancellationTokenSource TOKEN_SOURCE = new CancellationTokenSource();
-		static CancellationToken TOKEN = TOKEN_SOURCE.Token;
-		//static public string[] MEMBERS = new string[7];
+		static Music music = new Music();
 
 		[Command("ping")]
 		public async Task PingAsync()
@@ -79,6 +76,22 @@ namespace ACTECH.Modules
 				$"Created at: {user.CreatedAt}");
 		}
 
+		[Command("spam")]
+		[EnabledInDm(false)]
+		[DefaultMemberPermissions(GuildPermission.Administrator)]
+		public async Task SpamPing(SocketGuildUser user, int count)
+		{
+			if (user == null || count == 0)
+			{
+				await ReplyAsync("Invalid use. Try again.");
+				return;
+			}
+
+			for (int i = 0; i < count; i++)
+			{
+				await ReplyAsync(user.Mention + " Get pinged asshole");
+			}
+		}
 		[Command("maketeam")]
 		[EnabledInDm(false)]
 		[DefaultMemberPermissions(GuildPermission.Administrator)]
@@ -457,159 +470,53 @@ namespace ACTECH.Modules
 			}
 		}
 
-		[Command("play")]
+		[Command("play", RunMode = Discord.Commands.RunMode.Async)]
 		[Alias("p")]
 		[EnabledInDm(false)]
-		public async Task VideoHandlerAsync([Remainder] string query)
+		public async Task PlayAsync([Remainder] string query)
 		{
 			var channel = (Context.User as IVoiceState).VoiceChannel;
-
 			if (channel == null)
 			{
 				await ReplyAsync("User must be in a voice channel first.");
 				return;
 			}
-			var url = await YtSearchAsync(query);
-			if (url == "")
-				return;
-			await ReplyAsync(url);
-			if (URL_QUEUE.Count > 0)
-			{
-				URL_QUEUE.AddLast(url);
-				await ReplyAsync("Added to queue.");
-				return;
-			}
-			URL_QUEUE.AddLast(url);
 
-			if ((Context.Guild.CurrentUser as IVoiceState).VoiceChannel == null)
-				AUDIO_CLIENT = await channel.ConnectAsync();
-			
-			if (!TOKEN.CanBeCanceled)
-				TOKEN_SOURCE = new CancellationTokenSource();
+			if ((Context.Guild.CurrentUser as IVoiceState).VoiceChannel != channel)
+				music.audio_client = await channel.ConnectAsync();
 
-			await PlayHandlerAsync(TOKEN);
+			music.user = Context.User;
+			music.bot_user = Context.Guild.CurrentUser;
+			music.msg_channel = Context.Channel;
+			await music.VideoHandlerAsync(query);
 		}
 
-		private async Task PlayHandlerAsync(CancellationToken token)
-		{
-			CancellationTokenSource tokenSource = new CancellationTokenSource();
-			var cancelToken = tokenSource.Token;
-			while(URL_QUEUE.Count != 0)
-			{
-				var _task = Task.Run(async () => 
-				{
-					await PlayAsync(cancelToken);
-				}, cancelToken);
-				_task.Wait();
-				if (token.IsCancellationRequested)
-				{
-					tokenSource.Cancel();
-					await ReplyAsync("Skipped!");
-				}
-			}
-			TOKEN_SOURCE.Cancel();
-		}
-
-		private async Task<string> YtSearchAsync(string query)
-		{
-			var search = new YouTubeService(new BaseClientService.Initializer()
-			{
-				ApiKey = "YT_API_KEY"
-			});
-			var searchRequest = search.Search.List("snippet");
-			searchRequest.Q = query;
-			searchRequest.Type = "video";
-			searchRequest.MaxResults = 1;
-
-			var searchResponse = await searchRequest.ExecuteAsync();
-			if (searchResponse.Items.Count == 0)
-			{
-				await ReplyAsync("No results found.");
-				return "";
-			}
-			var url = "https://www.youtube.com/watch?v=" + searchResponse.Items.Single().Id.VideoId.ToString();
-			return url;
-		}
-
-		private async Task PlayAsync(CancellationToken token)
-		{
-			CancellationTokenSource tokenSource = new CancellationTokenSource();
-			CancellationToken flushToken = tokenSource.Token;
-			var queue = URL_QUEUE.ToList();
-			foreach(var video in queue) 
-			{
-				var ytClient = new YoutubeClient();
-				var streamManifest = await ytClient.Videos.Streams.GetManifestAsync(video);
-				var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
-				var stream = await ytClient.Videos.Streams.GetAsync(streamInfo);
-				var channel = (Context.User as IVoiceState).VoiceChannel;
-
-				var memoryStream = new MemoryStream();
-				await Cli.Wrap("ffmpeg/bin/ffmpeg")
-					.WithArguments(" -hide_banner -loglevel panic -i pipe:0 -ac 2 -f s16le -ar 48000 pipe:1")
-					.WithStandardInputPipe(PipeSource.FromStream(stream))
-					.WithStandardOutputPipe(PipeTarget.ToStream(memoryStream))
-					.ExecuteAsync();
-
-				using (var thingy = AUDIO_CLIENT.CreatePCMStream(AudioApplication.Mixed))
-				{
-					try { await thingy.WriteAsync(memoryStream.ToArray().AsMemory(0, (int)memoryStream.Length)); }
-					finally 
-					{ 
-						var _task = Task.Run(async () => 
-						{
-							await thingy.FlushAsync(flushToken); 
-						});
-						_task.Wait(token);
-					}
-				}
-				if (token.IsCancellationRequested)
-				{
-					tokenSource.Cancel();
-				}
-				URL_QUEUE.RemoveFirst();
-			}
-		}
-
-		//[Command("skip")]
-		//[Alias("s")]
-		//[EnabledInDm(false)]
+		[Command("skip")]
+		[Alias("s")]
+		[EnabledInDm(false)]
 		public async Task SkipAsync()
 		{
-			TOKEN_SOURCE.Cancel();
-			URL_QUEUE.RemoveFirst();
-			TOKEN_SOURCE = new CancellationTokenSource();
-			await PlayHandlerAsync(TOKEN);
+			await music.SkipAsync();
+			await ReplyAsync("Skipped!");
 		}
 
 		[Command("leave")]
-		[Alias("dc", "die", "fuckoff", "disconnect")]
+		[Alias("die", "kys", "quit", "dc", "disconnect")]
 		[EnabledInDm(false)]
-		public async Task LeaveVCAsync()
+		public async Task LeaveAsync()
 		{
-			try { var check_channel = (Context.Guild.CurrentUser as IVoiceState).VoiceChannel; }
-			catch (Exception ex) { Console.WriteLine(ex.ToString()); return; }
-
-			var channel = (Context.Guild.CurrentUser as IVoiceState).VoiceChannel;
-
-			if (channel == null)
-			{
-				await ReplyAsync("Not in a voice channel.");
-				return;
-			}
-
-			await channel.DisconnectAsync();
-			await ReplyAsync("Bye!");
-			TOKEN_SOURCE.Cancel();
-			URL_QUEUE.Clear();
+			music.msg_channel = Context.Channel;
+			await music.LeaveVCAsync();
 		}
 
 		[Command("clear")]
 		[EnabledInDm(false)]
 		public async Task ClearQueueAsync()
 		{
-			URL_QUEUE.Clear();
+			await music.ClearQueueAsync();
+			await ReplyAsync("Queue cleared!");
 		}
+		
 		//[Command("redoteamperms")]
 		//[EnabledInDm(false)]
 		//[DefaultMemberPermissions(GuildPermission.Administrator)]

@@ -2,19 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "AngleSharp/0.17.0": {
+      "AngleSharp/1.0.1": {
         "type": "package",
         "dependencies": {
           "System.Buffers": "4.5.1",
-          "System.Text.Encoding.CodePages": "5.0.0"
+          "System.Text.Encoding.CodePages": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/AngleSharp.dll": {
+          "lib/net6.0/AngleSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/AngleSharp.dll": {
+          "lib/net6.0/AngleSharp.dll": {
             "related": ".xml"
           }
         }
@@ -32,7 +32,23 @@
           }
         }
       },
-      "ConcurrentHashSet/1.1.0": {
+      "Concentus/1.1.7": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/Concentus.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Concentus.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "ConcurrentHashSet/1.3.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/ConcurrentCollections.dll": {
@@ -77,21 +93,21 @@
           "lib/netstandard2.0/Discord.Addons.Interactive.dll": {}
         }
       },
-      "Discord.Net/3.9.0": {
+      "Discord.Net/3.10.0": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Commands": "3.9.0",
-          "Discord.Net.Core": "3.9.0",
-          "Discord.Net.Interactions": "3.9.0",
-          "Discord.Net.Rest": "3.9.0",
-          "Discord.Net.WebSocket": "3.9.0",
-          "Discord.Net.Webhook": "3.9.0"
+          "Discord.Net.Commands": "3.10.0",
+          "Discord.Net.Core": "3.10.0",
+          "Discord.Net.Interactions": "3.10.0",
+          "Discord.Net.Rest": "3.10.0",
+          "Discord.Net.WebSocket": "3.10.0",
+          "Discord.Net.Webhook": "3.10.0"
         }
       },
-      "Discord.Net.Commands/3.9.0": {
+      "Discord.Net.Commands/3.10.0": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.9.0"
+          "Discord.Net.Core": "3.10.0"
         },
         "compile": {
           "lib/net6.0/Discord.Net.Commands.dll": {
@@ -104,10 +120,10 @@
           }
         }
       },
-      "Discord.Net.Core/3.9.0": {
+      "Discord.Net.Core/3.10.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
+          "Newtonsoft.Json": "13.0.2",
           "System.Collections.Immutable": "5.0.0",
           "System.Interactive.Async": "5.0.0",
           "System.ValueTuple": "4.5.0"
@@ -123,12 +139,12 @@
           }
         }
       },
-      "Discord.Net.Interactions/3.9.0": {
+      "Discord.Net.Interactions/3.10.0": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.9.0",
-          "Discord.Net.Rest": "3.9.0",
-          "Discord.Net.WebSocket": "3.9.0",
+          "Discord.Net.Core": "3.10.0",
+          "Discord.Net.Rest": "3.10.0",
+          "Discord.Net.WebSocket": "3.10.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "System.Collections.Immutable": "5.0.0",
           "System.Reactive": "5.0.0"
@@ -144,10 +160,10 @@
           }
         }
       },
-      "Discord.Net.Rest/3.9.0": {
+      "Discord.Net.Rest/3.10.0": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.9.0"
+          "Discord.Net.Core": "3.10.0"
         },
         "compile": {
           "lib/net6.0/Discord.Net.Rest.dll": {
@@ -160,11 +176,11 @@
           }
         }
       },
-      "Discord.Net.Webhook/3.9.0": {
+      "Discord.Net.Webhook/3.10.0": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.9.0",
-          "Discord.Net.Rest": "3.9.0"
+          "Discord.Net.Core": "3.10.0",
+          "Discord.Net.Rest": "3.10.0"
         },
         "compile": {
           "lib/net6.0/Discord.Net.Webhook.dll": {
@@ -177,11 +193,11 @@
           }
         }
       },
-      "Discord.Net.WebSocket/3.9.0": {
+      "Discord.Net.WebSocket/3.10.0": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.9.0",
-          "Discord.Net.Rest": "3.9.0"
+          "Discord.Net.Core": "3.10.0",
+          "Discord.Net.Rest": "3.10.0"
         },
         "compile": {
           "lib/net6.0/Discord.Net.WebSocket.dll": {
@@ -214,13 +230,13 @@
           }
         }
       },
-      "DSharpPlus/4.3.0": {
+      "DSharpPlus/4.4.0": {
         "type": "package",
         "dependencies": {
-          "Emzi0767.Common": "2.6.2",
           "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
           "Newtonsoft.Json": "13.0.2",
-          "System.Memory": "4.5.4",
+          "System.Collections.Immutable": "7.0.0",
+          "System.Memory": "4.5.5",
           "System.Net.Http": "4.3.4",
           "System.Net.WebSockets": "4.3.0",
           "System.Net.WebSockets.Client": "4.3.2",
@@ -238,10 +254,10 @@
           }
         }
       },
-      "DSharpPlus.CommandsNext/4.3.0": {
+      "DSharpPlus.CommandsNext/4.4.0": {
         "type": "package",
         "dependencies": {
-          "DSharpPlus": "4.3.0",
+          "DSharpPlus": "4.4.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.1"
         },
         "compile": {
@@ -255,11 +271,11 @@
           }
         }
       },
-      "DSharpPlus.Interactivity/4.3.0": {
+      "DSharpPlus.Interactivity/4.4.0": {
         "type": "package",
         "dependencies": {
-          "ConcurrentHashSet": "1.1.0",
-          "DSharpPlus": "4.3.0"
+          "ConcurrentHashSet": "1.3.0",
+          "DSharpPlus": "4.4.0"
         },
         "compile": {
           "lib/netstandard2.0/DSharpPlus.Interactivity.dll": {
@@ -272,10 +288,10 @@
           }
         }
       },
-      "DSharpPlus.VoiceNext/4.3.0": {
+      "DSharpPlus.VoiceNext/4.4.0": {
         "type": "package",
         "dependencies": {
-          "DSharpPlus": "4.3.0",
+          "DSharpPlus": "4.4.0",
           "DSharpPlus.VoiceNext.Natives": "1.0.0",
           "System.Threading.Channels": "5.0.0"
         },
@@ -311,29 +327,10 @@
           }
         }
       },
-      "Emzi0767.Common/2.6.2": {
+      "Google.Apis/1.60.0": {
         "type": "package",
         "dependencies": {
-          "System.Collections.Immutable": "5.0.0",
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.ValueTuple": "4.5.0"
-        },
-        "compile": {
-          "lib/netcoreapp2.1/Emzi0767.Common.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/Emzi0767.Common.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Google.Apis/1.58.0": {
-        "type": "package",
-        "dependencies": {
-          "Google.Apis.Core": "1.58.0"
+          "Google.Apis.Core": "1.60.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.dll": {
@@ -346,11 +343,11 @@
           }
         }
       },
-      "Google.Apis.Auth/1.58.0": {
+      "Google.Apis.Auth/1.60.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.58.0",
-          "Google.Apis.Core": "1.58.0"
+          "Google.Apis": "1.60.0",
+          "Google.Apis.Core": "1.60.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
@@ -365,7 +362,7 @@
           }
         }
       },
-      "Google.Apis.Core/1.58.0": {
+      "Google.Apis.Core/1.60.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.2"
@@ -381,11 +378,11 @@
           }
         }
       },
-      "Google.Apis.YouTube.v3/1.58.0.2874": {
+      "Google.Apis.YouTube.v3/1.60.0.2945": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.58.0",
-          "Google.Apis.Auth": "1.58.0"
+          "Google.Apis": "1.60.0",
+          "Google.Apis.Auth": "1.60.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {
@@ -895,7 +892,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.NETCore.Platforms/5.0.0": {
+      "Microsoft.NETCore.Platforms/1.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -926,12 +923,12 @@
           }
         }
       },
-      "NetEscapades.Configuration.Yaml/2.2.0": {
+      "NetEscapades.Configuration.Yaml/3.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.0.0",
-          "YamlDotNet": "11.2.1"
+          "YamlDotNet": "13.0.1"
         },
         "compile": {
           "lib/netstandard2.0/NetEscapades.Configuration.Yaml.dll": {
@@ -1249,17 +1246,23 @@
           "lib/netstandard1.3/System.Collections.Concurrent.dll": {}
         }
       },
-      "System.Collections.Immutable/5.0.0": {
+      "System.Collections.Immutable/7.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+          "lib/net6.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+          "lib/net6.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Console/4.3.0": {
@@ -1595,7 +1598,7 @@
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
         }
       },
-      "System.Memory/4.5.4": {
+      "System.Memory/4.5.5": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.1/_._": {}
@@ -2410,23 +2413,26 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/5.0.0": {
+      "System.Text.Encoding.CodePages/6.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.0"
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+          "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2674,23 +2680,23 @@
           "lib/netstandard1.1/libvideo.dll": {}
         }
       },
-      "YamlDotNet/11.2.1": {
+      "YamlDotNet/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/YamlDotNet.dll": {
+          "lib/net6.0/YamlDotNet.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.1/YamlDotNet.dll": {
+          "lib/net6.0/YamlDotNet.dll": {
             "related": ".xml"
           }
         }
       },
-      "YoutubeExplode/6.2.5": {
+      "YoutubeExplode/6.2.12": {
         "type": "package",
         "dependencies": {
-          "AngleSharp": "0.17.0"
+          "AngleSharp": "1.0.1"
         },
         "compile": {
           "lib/net5.0/YoutubeExplode.dll": {
@@ -2701,9 +2707,6 @@
           "lib/net5.0/YoutubeExplode.dll": {
             "related": ".xml"
           }
-        },
-        "build": {
-          "build/YoutubeExplode.targets": {}
         }
       },
       "YouTubeSearch/2.2.6": {
@@ -2722,19 +2725,24 @@
     }
   },
   "libraries": {
-    "AngleSharp/0.17.0": {
-      "sha512": "74haoXINcj4SdMsmiNzk+9VUwIX1U9P61O6AZd5Uao8SGNnJJB8Y/r8VJRc8orn4c7Vk/oURAKSNF9XcSDxbfA==",
+    "AngleSharp/1.0.1": {
+      "sha512": "uIezZhHZqWEb4zw/D5Xnskqb/sivIFwfWcUX2srPWTE10IYahfrdhWTIk859BpEmPmxSlMoL+S0JimFTaWGaHA==",
       "type": "package",
-      "path": "anglesharp/0.17.0",
+      "path": "anglesharp/1.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "anglesharp.0.17.0.nupkg.sha512",
+        "README.md",
+        "anglesharp.1.0.1.nupkg.sha512",
         "anglesharp.nuspec",
         "lib/net461/AngleSharp.dll",
         "lib/net461/AngleSharp.xml",
         "lib/net472/AngleSharp.dll",
         "lib/net472/AngleSharp.xml",
+        "lib/net6.0/AngleSharp.dll",
+        "lib/net6.0/AngleSharp.xml",
+        "lib/net7.0/AngleSharp.dll",
+        "lib/net7.0/AngleSharp.xml",
         "lib/netstandard2.0/AngleSharp.dll",
         "lib/netstandard2.0/AngleSharp.xml",
         "logo.png"
@@ -2761,14 +2769,32 @@
         "lib/netstandard2.1/CliWrap.xml"
       ]
     },
-    "ConcurrentHashSet/1.1.0": {
-      "sha512": "1SuuhZe0wUJbchXdjS23O+quojkw0IXqM9LtUp3RwgQreDI4cj1lfDbdHnD4fOYEnUrftzVIYoonvPlsXm30Bg==",
+    "Concentus/1.1.7": {
+      "sha512": "cfVhAuVDkResrGXMC9eAFh5OlGuFhU0wohzGKpQw+sWdhVjSBuS+BVTmk7JnxcJq+ErESz6OErzL0cS2lqtAlA==",
       "type": "package",
-      "path": "concurrenthashset/1.1.0",
+      "path": "concentus/1.1.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "concurrenthashset.1.1.0.nupkg.sha512",
+        "Readme.txt",
+        "concentus.1.1.7.nupkg.sha512",
+        "concentus.nuspec",
+        "lib/netstandard1.0/Concentus.XML",
+        "lib/netstandard1.0/Concentus.dll",
+        "lib/netstandard1.0/Concentus.pdb",
+        "lib/portable-net45+win+wpa81+wp80/Concentus.XML",
+        "lib/portable-net45+win+wpa81+wp80/Concentus.dll",
+        "lib/portable-net45+win+wpa81+wp80/Concentus.pdb"
+      ]
+    },
+    "ConcurrentHashSet/1.3.0": {
+      "sha512": "a30gfk4WDn2f7sOisXpko+CrQ7s5nL1ZWk4afnRwwRQHWPRrRSZpzn5Dz2YWpJtS90NJqkytQ/MkzHq4QYTIbg==",
+      "type": "package",
+      "path": "concurrenthashset/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "concurrenthashset.1.3.0.nupkg.sha512",
         "concurrenthashset.nuspec",
         "lib/net461/ConcurrentCollections.dll",
         "lib/net461/ConcurrentCollections.xml",
@@ -2805,27 +2831,27 @@
         "lib/netstandard2.0/Discord.Addons.Interactive.dll"
       ]
     },
-    "Discord.Net/3.9.0": {
-      "sha512": "jlDs5jiRDfPSP2WWNIw3J3TqKXJKQWTgCeTpYchI9+AzdTX4lOs2RWWvNRPJydUC69dEc9Yew9A3C+8G2zxMMQ==",
+    "Discord.Net/3.10.0": {
+      "sha512": "X5V2lM8YO3Vf1oqxmL1/zSAOKmIZ7AAlxbpgdelQlCKXWZSJeEadLqxQRLCa/z6VsK+btdfNHZFxeQjqYPQ9mQ==",
       "type": "package",
-      "path": "discord.net/3.9.0",
+      "path": "discord.net/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PackageLogo.png",
-        "discord.net.3.9.0.nupkg.sha512",
+        "discord.net.3.10.0.nupkg.sha512",
         "discord.net.nuspec"
       ]
     },
-    "Discord.Net.Commands/3.9.0": {
-      "sha512": "Zbv2XQ4jPa2/b7TKR32OqGpAo/H7ps43fgVi57M/IBwnI6oYEOHjGAbnlPD5Rx/gbD/Gmj+n+Q+yWeUQnxfojg==",
+    "Discord.Net.Commands/3.10.0": {
+      "sha512": "/DpV2H+PkOtypV6csIdp6NSqhxuDnyS25gcteaDpbwceMwCxmaveTiycUmPxbqgjKADzNx4qszoxShwQGoXalg==",
       "type": "package",
-      "path": "discord.net.commands/3.9.0",
+      "path": "discord.net.commands/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PackageLogo.png",
-        "discord.net.commands.3.9.0.nupkg.sha512",
+        "discord.net.commands.3.10.0.nupkg.sha512",
         "discord.net.commands.nuspec",
         "lib/net461/Discord.Net.Commands.dll",
         "lib/net461/Discord.Net.Commands.xml",
@@ -2839,15 +2865,15 @@
         "lib/netstandard2.1/Discord.Net.Commands.xml"
       ]
     },
-    "Discord.Net.Core/3.9.0": {
-      "sha512": "pO1V1yGBM5pYYWuUbSIUM/C6jQVG8cNmZnVMZxXto1NJq16Ldgvg3KgiS9GMLMF1o/Q7EenIFI6jFaDvIBg6Mw==",
+    "Discord.Net.Core/3.10.0": {
+      "sha512": "GnsLmSYDShws23rqzdf6aOwIG70cqYUHY7i2cFdj3YVz/c8OelsbLndnFvkg6yELcy7aD60NSHyYZ5oMsgDavA==",
       "type": "package",
-      "path": "discord.net.core/3.9.0",
+      "path": "discord.net.core/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PackageLogo.png",
-        "discord.net.core.3.9.0.nupkg.sha512",
+        "discord.net.core.3.10.0.nupkg.sha512",
         "discord.net.core.nuspec",
         "lib/net461/Discord.Net.Core.dll",
         "lib/net461/Discord.Net.Core.xml",
@@ -2861,15 +2887,15 @@
         "lib/netstandard2.1/Discord.Net.Core.xml"
       ]
     },
-    "Discord.Net.Interactions/3.9.0": {
-      "sha512": "q8sRTf+1uy5MPoZFaj1XZ3I7PTll2lA6Nn6doLWlLYMZPqVQ7TNfhv2lxgMySgvSfmSXHncvh6z4ap1F+lk9og==",
+    "Discord.Net.Interactions/3.10.0": {
+      "sha512": "9IrJQ1kV6wmUHijUtfv4yA6+YlTxD0UyJV8mRaGN4CjahC5a5LGIwSj6MnUiz2Zgh0CPQIGGOB55K1Ovu13jjg==",
       "type": "package",
-      "path": "discord.net.interactions/3.9.0",
+      "path": "discord.net.interactions/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PackageLogo.png",
-        "discord.net.interactions.3.9.0.nupkg.sha512",
+        "discord.net.interactions.3.10.0.nupkg.sha512",
         "discord.net.interactions.nuspec",
         "lib/net461/Discord.Net.Interactions.dll",
         "lib/net461/Discord.Net.Interactions.xml",
@@ -2883,15 +2909,15 @@
         "lib/netstandard2.1/Discord.Net.Interactions.xml"
       ]
     },
-    "Discord.Net.Rest/3.9.0": {
-      "sha512": "Rde+/TUmcy/vZGuHJQ0nQioMEg8hcLBvjry40/khSYnVvHw22IPNYxLEftej/onKseyjbtb1F+u4JSfQwszBKQ==",
+    "Discord.Net.Rest/3.10.0": {
+      "sha512": "N2nlOCoZCTyQbDlwqDKcqknOgwAbeJgy2r9DAUNsNxcO763ru67WK3GxkA7V7QgZ80RU9rLB3fr9jvjJ14pUBA==",
       "type": "package",
-      "path": "discord.net.rest/3.9.0",
+      "path": "discord.net.rest/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PackageLogo.png",
-        "discord.net.rest.3.9.0.nupkg.sha512",
+        "discord.net.rest.3.10.0.nupkg.sha512",
         "discord.net.rest.nuspec",
         "lib/net461/Discord.Net.Rest.dll",
         "lib/net461/Discord.Net.Rest.xml",
@@ -2905,15 +2931,15 @@
         "lib/netstandard2.1/Discord.Net.Rest.xml"
       ]
     },
-    "Discord.Net.Webhook/3.9.0": {
-      "sha512": "Zv3Rwl8UFNkCZBvzOuvzTSiG59jb+ck52szF+rRS0v79wui4couaMrSBtwHKIx2ZN2pbUwedyVUvnRTM+2clWA==",
+    "Discord.Net.Webhook/3.10.0": {
+      "sha512": "1rZFNpsK7b34SQmtnwa/jm8E1aIkoaBA1GzPM1hDGC/NX1q9fxoF7CEyeiC1ExDz+WVBp8JBCwEfAr7Qx63/LA==",
       "type": "package",
-      "path": "discord.net.webhook/3.9.0",
+      "path": "discord.net.webhook/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PackageLogo.png",
-        "discord.net.webhook.3.9.0.nupkg.sha512",
+        "discord.net.webhook.3.10.0.nupkg.sha512",
         "discord.net.webhook.nuspec",
         "lib/net5.0/Discord.Net.Webhook.dll",
         "lib/net5.0/Discord.Net.Webhook.xml",
@@ -2925,15 +2951,15 @@
         "lib/netstandard2.1/Discord.Net.Webhook.xml"
       ]
     },
-    "Discord.Net.WebSocket/3.9.0": {
-      "sha512": "iw8umoLyG3DiYU33qYkQNPbfUGWYkPTE2Cs2HBnSAQBn92HI8rJZijKNpJjXLNurf1pHFKAQOToLHydHu9QtFQ==",
+    "Discord.Net.WebSocket/3.10.0": {
+      "sha512": "pA581o5JoAAFlintQEeDncIr99WHZOWzwnZWLuPiSW4BmFjG/oYf8F6C60Ob/5w1C1QB0k72NLgh8mEwnTCI5Q==",
       "type": "package",
-      "path": "discord.net.websocket/3.9.0",
+      "path": "discord.net.websocket/3.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "PackageLogo.png",
-        "discord.net.websocket.3.9.0.nupkg.sha512",
+        "discord.net.websocket.3.10.0.nupkg.sha512",
         "discord.net.websocket.nuspec",
         "lib/net461/Discord.Net.WebSocket.dll",
         "lib/net461/Discord.Net.WebSocket.xml",
@@ -2960,57 +2986,57 @@
         "lib/netstandard2.0/DiscordInteractivity.xml"
       ]
     },
-    "DSharpPlus/4.3.0": {
-      "sha512": "XE++PG6ITT4w3WL4K9zBpMYU29holXSSB0dwVDL4S2muwi2BiD6pGta5kCNm1VAKkaKM+0SsUB7RljGMGKW36g==",
+    "DSharpPlus/4.4.0": {
+      "sha512": "/phY+NSuk46WwsFmtHDcdnQ4Mts+P8gsxSG9elF2fBPem194wEd5gsKkMG7z1d9K8qic/V09LeSKGlU9JcGFTw==",
       "type": "package",
-      "path": "dsharpplus/4.3.0",
+      "path": "dsharpplus/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dsharpplus.4.3.0.nupkg.sha512",
+        "dsharpplus.4.4.0.nupkg.sha512",
         "dsharpplus.nuspec",
         "dsharpplus.png",
         "lib/netstandard2.0/DSharpPlus.dll",
         "lib/netstandard2.0/DSharpPlus.xml"
       ]
     },
-    "DSharpPlus.CommandsNext/4.3.0": {
-      "sha512": "Cr4t6hPDJOD/SorlNaviU8/6VDH/vl5XByTWadlMuvMVXYV1R7j5J+1MK+wr0bcyhX4oztwHRQ+OcPKTClXbQA==",
+    "DSharpPlus.CommandsNext/4.4.0": {
+      "sha512": "pP6hfH51p59YznpJv8hq8ySHkwtPMdL+4g9f3rV6yGvqjw2BgZgx+VoWoI/gpoXa+CKSO0xmdkW1rH65ngbQYw==",
       "type": "package",
-      "path": "dsharpplus.commandsnext/4.3.0",
+      "path": "dsharpplus.commandsnext/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dsharpplus.commandsnext.4.3.0.nupkg.sha512",
+        "dsharpplus.commandsnext.4.4.0.nupkg.sha512",
         "dsharpplus.commandsnext.nuspec",
         "dsharpplus.png",
         "lib/netstandard2.0/DSharpPlus.CommandsNext.dll",
         "lib/netstandard2.0/DSharpPlus.CommandsNext.xml"
       ]
     },
-    "DSharpPlus.Interactivity/4.3.0": {
-      "sha512": "bODOZm408xx4EwYG6DPhdIX8rtZQQT45S2OhulPWi6QfxSODgFZvj97LIYQeX1FEOX0Eh7sqHBSCXlTlpAb2Eg==",
+    "DSharpPlus.Interactivity/4.4.0": {
+      "sha512": "eVhuTO/zpwBWy4XE/lKFnrxLRATeT2h3hBA8cm4dCw+nsuQ0qjGcdQnxoMTM1pLovS0/tgD6Ndj0UDcCd2QzsQ==",
       "type": "package",
-      "path": "dsharpplus.interactivity/4.3.0",
+      "path": "dsharpplus.interactivity/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "dsharpplus.interactivity.4.3.0.nupkg.sha512",
+        "dsharpplus.interactivity.4.4.0.nupkg.sha512",
         "dsharpplus.interactivity.nuspec",
         "dsharpplus.png",
         "lib/netstandard2.0/DSharpPlus.Interactivity.dll",
         "lib/netstandard2.0/DSharpPlus.Interactivity.xml"
       ]
     },
-    "DSharpPlus.VoiceNext/4.3.0": {
-      "sha512": "4kl8i+T4Mk6ZuqJeu+h0D4i+sCDxOyFe/TmQ0xzjbL7M6lz+KbJA9ZeEcLyrB8SyGmBb8wZSKvXOGT4TWdIFNA==",
+    "DSharpPlus.VoiceNext/4.4.0": {
+      "sha512": "8rndcfCm/ubtqKfTW64R7ofGKO1G4OIsSz/A6os4amz4YossLhMxBBPdNr9vJrKvn9UKaMHzX9d7AVjgz0MyQA==",
       "type": "package",
-      "path": "dsharpplus.voicenext/4.3.0",
+      "path": "dsharpplus.voicenext/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "dsharpplus.png",
-        "dsharpplus.voicenext.4.3.0.nupkg.sha512",
+        "dsharpplus.voicenext.4.4.0.nupkg.sha512",
         "dsharpplus.voicenext.nuspec",
         "lib/netstandard2.0/DSharpPlus.VoiceNext.dll",
         "lib/netstandard2.0/DSharpPlus.VoiceNext.xml"
@@ -3031,33 +3057,16 @@
         "runtimes/win-x86/native/libsodium.dll"
       ]
     },
-    "Emzi0767.Common/2.6.2": {
-      "sha512": "/4dew6o2Y8xN0Eu025mDBE/abp/nOVtX59EnZn67ILMqRTk2Mqlnr6oEScSnuLrld8VsIgy+8vURirL6WBpUBA==",
+    "Google.Apis/1.60.0": {
+      "sha512": "T8ojAsKlsMkt5nZhTQuocqHYzm/knVm8o2/JMm4louEjaKzT4x0FihoCIxCYSTRGWkYC27LPWspyG4p76+bMzA==",
       "type": "package",
-      "path": "emzi0767.common/2.6.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "emzi0767.common.2.6.2.nupkg.sha512",
-        "emzi0767.common.nuspec",
-        "lib/net45/Emzi0767.Common.dll",
-        "lib/net45/Emzi0767.Common.xml",
-        "lib/netcoreapp2.1/Emzi0767.Common.dll",
-        "lib/netcoreapp2.1/Emzi0767.Common.xml",
-        "lib/netstandard2.0/Emzi0767.Common.dll",
-        "lib/netstandard2.0/Emzi0767.Common.xml"
-      ]
-    },
-    "Google.Apis/1.58.0": {
-      "sha512": "OFIWLMbxL096T6L3b0cQLSQGAxRZWIZLNkjZtaYUQ5exz67aW7+Sd+OQnzdFGrV0yyTNlMOy+j6AqmdsenJHXA==",
-      "type": "package",
-      "path": "google.apis/1.58.0",
+      "path": "google.apis/1.60.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.1.58.0.nupkg.sha512",
+        "google.apis.1.60.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net45/Google.Apis.PlatformServices.dll",
         "lib/net45/Google.Apis.dll",
@@ -3071,16 +3080,16 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.58.0": {
-      "sha512": "8HAVH23c/O6ODdpedkw/2B3VqG4YKEMk0v0Sb6tEz7GRaiqGwdMntytr7iez0iFvCFDA5SkHnYDCNCIztnSMhA==",
+    "Google.Apis.Auth/1.60.0": {
+      "sha512": "AUuWniIf2muns/9hesiF7yCKeQN+PbdTU864Rb2wDzW4xmepO6tEnoqREPeow95qIAgkOlL/byKeU65d3ox5Ng==",
       "type": "package",
-      "path": "google.apis.auth/1.58.0",
+      "path": "google.apis.auth/1.60.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.auth.1.58.0.nupkg.sha512",
+        "google.apis.auth.1.60.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
         "lib/net45/Google.Apis.Auth.dll",
@@ -3100,16 +3109,16 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.58.0": {
-      "sha512": "e1QpJz6hMuxN7Whm9ORl98dV9/6kM4UC+zNHGFO/S7OVV4wglFkix9DMidzdEmo3AGrs9KZSk69N+rYHJKqn+A==",
+    "Google.Apis.Core/1.60.0": {
+      "sha512": "NOkjqMQblYEZXt2OEgshWayveYW11Pi+Uz0I30Kzl9BvL4TZLJzMqtiu1EdV8XkyyjGuAUgANdi4BOqRDlbVEw==",
       "type": "package",
-      "path": "google.apis.core/1.58.0",
+      "path": "google.apis.core/1.60.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.core.1.58.0.nupkg.sha512",
+        "google.apis.core.1.60.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net45/Google.Apis.Core.dll",
         "lib/net45/Google.Apis.Core.pdb",
@@ -3122,16 +3131,16 @@
         "lib/netstandard2.0/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.YouTube.v3/1.58.0.2874": {
-      "sha512": "/h7JiQ4ziTTGhux5gOPGHpSygu5sb471VTWiUvM/v1SFTVxsJk4cv075lIHfMPnRaaUrnn6c3SvNik+cLJsEmw==",
+    "Google.Apis.YouTube.v3/1.60.0.2945": {
+      "sha512": "X28UjAhm4KUNaPEPRk8nVIEJnvqPfa78yhqLhpRa2Bq3rEshBr+/mBGFaQG/UO3ksuELXvJsDigdrQ01uf3ULg==",
       "type": "package",
-      "path": "google.apis.youtube.v3/1.58.0.2874",
+      "path": "google.apis.youtube.v3/1.60.0.2945",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.youtube.v3.1.58.0.2874.nupkg.sha512",
+        "google.apis.youtube.v3.1.60.0.2945.nupkg.sha512",
         "google.apis.youtube.v3.nuspec",
         "lib/net45/Google.Apis.YouTube.v3.dll",
         "lib/net45/Google.Apis.YouTube.v3.pdb",
@@ -3710,22 +3719,19 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.NETCore.Platforms/5.0.0": {
-      "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+    "Microsoft.NETCore.Platforms/1.1.1": {
+      "sha512": "TMBuzAHpTenGbGgk0SMTwyEkyijY/Eae4ZGsFNYJvAr/LDn1ku3Etp3FPxChmDp5HHF3kzJuoaa08N0xjqAJfQ==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/5.0.0",
+      "path": "microsoft.netcore.platforms/1.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.1.1.1.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "runtime.json"
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
@@ -3781,10 +3787,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "NetEscapades.Configuration.Yaml/2.2.0": {
-      "sha512": "g++p0PrPIMgGmSpqJOsf0bifO1d7HiVj2rAuwQkFu4BhsPSimzPDAx3MKMBOU0jXEgVG1mWSlufoo1P+2Ls+mQ==",
+    "NetEscapades.Configuration.Yaml/3.0.0": {
+      "sha512": "0+3HqNiiJ5WayL7at+eir4dUWN0svlKI4pFufpSV2rHxkjF8i3r55A1b3bdAoOUFz8vS5iuqxJFpkMAJuZa84A==",
       "type": "package",
-      "path": "netescapades.configuration.yaml/2.2.0",
+      "path": "netescapades.configuration.yaml/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3794,7 +3800,7 @@
         "lib/net472/NetEscapades.Configuration.Yaml.pdb",
         "lib/netstandard2.0/NetEscapades.Configuration.Yaml.dll",
         "lib/netstandard2.0/NetEscapades.Configuration.Yaml.pdb",
-        "netescapades.configuration.yaml.2.2.0.nupkg.sha512",
+        "netescapades.configuration.yaml.3.0.0.nupkg.sha512",
         "netescapades.configuration.yaml.nuspec"
       ]
     },
@@ -4301,30 +4307,32 @@
         "system.collections.concurrent.nuspec"
       ]
     },
-    "System.Collections.Immutable/5.0.0": {
-      "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
+    "System.Collections.Immutable/7.0.0": {
+      "sha512": "dQPcs0U1IKnBdRDBkrCTi1FoajSTBzLcVTpjO4MBCMC7f4pDOIPzgBoX8JjG7X6uZRJ8EBxsi8+DR1JuwjnzOQ==",
       "type": "package",
-      "path": "system.collections.immutable/5.0.0",
+      "path": "system.collections.immutable/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "README.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Collections.Immutable.dll",
-        "lib/net461/System.Collections.Immutable.xml",
-        "lib/netstandard1.0/System.Collections.Immutable.dll",
-        "lib/netstandard1.0/System.Collections.Immutable.xml",
-        "lib/netstandard1.3/System.Collections.Immutable.dll",
-        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "buildTransitive/net461/System.Collections.Immutable.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
+        "lib/net462/System.Collections.Immutable.dll",
+        "lib/net462/System.Collections.Immutable.xml",
+        "lib/net6.0/System.Collections.Immutable.dll",
+        "lib/net6.0/System.Collections.Immutable.xml",
+        "lib/net7.0/System.Collections.Immutable.dll",
+        "lib/net7.0/System.Collections.Immutable.xml",
         "lib/netstandard2.0/System.Collections.Immutable.dll",
         "lib/netstandard2.0/System.Collections.Immutable.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
-        "system.collections.immutable.5.0.0.nupkg.sha512",
+        "system.collections.immutable.7.0.0.nupkg.sha512",
         "system.collections.immutable.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Console/4.3.0": {
@@ -5253,10 +5261,10 @@
         "system.linq.expressions.nuspec"
       ]
     },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
       "type": "package",
-      "path": "system.memory/4.5.4",
+      "path": "system.memory/4.5.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5270,7 +5278,7 @@
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
         "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.4.5.5.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7019,45 +7027,43 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/5.0.0": {
-      "sha512": "NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
       "type": "package",
-      "path": "system.text.encoding.codepages/5.0.0",
+      "path": "system.text.encoding.codepages/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net46/System.Text.Encoding.CodePages.dll",
         "lib/net461/System.Text.Encoding.CodePages.dll",
         "lib/net461/System.Text.Encoding.CodePages.xml",
-        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
         "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
         "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
-        "system.text.encoding.codepages.5.0.0.nupkg.sha512",
+        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Text.Encoding.Extensions/4.3.0": {
@@ -7783,52 +7789,53 @@
         "videolibrary.nuspec"
       ]
     },
-    "YamlDotNet/11.2.1": {
-      "sha512": "tBt8K+korVfrjH9wyDEhiLKxbs8qoLCLIFwvYgkSUuMC9//w3z0cFQ8LQAI/5MCKq+BMil0cfRTRvPeE7eXhQw==",
+    "YamlDotNet/13.0.1": {
+      "sha512": "E1e/xFXB+Cbn7pLVlr+8E3nemEitIReVgmAMMMveADvZvXGuSGHP+1Cg6oA+SUfwXHfaXLQn4STCaPKtdIJkWA==",
       "type": "package",
-      "path": "yamldotnet/11.2.1",
+      "path": "yamldotnet/13.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "images/yamldotnet.png",
-        "lib/net20/YamlDotNet.dll",
-        "lib/net20/YamlDotNet.xml",
-        "lib/net35-client/YamlDotNet.dll",
-        "lib/net35-client/YamlDotNet.xml",
         "lib/net35/YamlDotNet.dll",
         "lib/net35/YamlDotNet.xml",
         "lib/net45/YamlDotNet.dll",
         "lib/net45/YamlDotNet.xml",
-        "lib/netstandard1.3/YamlDotNet.dll",
-        "lib/netstandard1.3/YamlDotNet.xml",
+        "lib/net47/YamlDotNet.dll",
+        "lib/net47/YamlDotNet.xml",
+        "lib/net6.0/YamlDotNet.dll",
+        "lib/net6.0/YamlDotNet.xml",
+        "lib/net7.0/YamlDotNet.dll",
+        "lib/net7.0/YamlDotNet.xml",
+        "lib/netstandard2.0/YamlDotNet.dll",
+        "lib/netstandard2.0/YamlDotNet.xml",
         "lib/netstandard2.1/YamlDotNet.dll",
         "lib/netstandard2.1/YamlDotNet.xml",
-        "yamldotnet.11.2.1.nupkg.sha512",
+        "yamldotnet.13.0.1.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
     },
-    "YoutubeExplode/6.2.5": {
-      "sha512": "YzkfJ/2bMh4WWIdnJNH14/xooRr58qqDn9IquFnus3qPJIPgW4YFYE/Bw0YUMrUj6R92VXixgIf4kg+FJQbwPg==",
+    "YoutubeExplode/6.2.12": {
+      "sha512": "AU5GjOG87Z14envpy7n0vEJc/7jq6Z8Ee8qkY5mpxUSShrbEoUvB/dr+ns4vHcizaVRV5yK10RdESHIMbaUZew==",
       "type": "package",
-      "path": "youtubeexplode/6.2.5",
+      "path": "youtubeexplode/6.2.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Readme.md",
-        "build/YoutubeExplode.targets",
         "favicon.png",
         "lib/net461/YoutubeExplode.dll",
         "lib/net461/YoutubeExplode.xml",
         "lib/net5.0/YoutubeExplode.dll",
         "lib/net5.0/YoutubeExplode.xml",
-        "lib/netcoreapp3.0/YoutubeExplode.dll",
-        "lib/netcoreapp3.0/YoutubeExplode.xml",
+        "lib/netcoreapp3.1/YoutubeExplode.dll",
+        "lib/netcoreapp3.1/YoutubeExplode.xml",
         "lib/netstandard2.0/YoutubeExplode.dll",
         "lib/netstandard2.0/YoutubeExplode.xml",
         "lib/netstandard2.1/YoutubeExplode.dll",
         "lib/netstandard2.1/YoutubeExplode.xml",
-        "youtubeexplode.6.2.5.nupkg.sha512",
+        "youtubeexplode.6.2.12.nupkg.sha512",
         "youtubeexplode.nuspec"
       ]
     },
@@ -7848,22 +7855,23 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "CliWrap >= 3.6.0",
-      "DSharpPlus >= 4.3.0",
-      "DSharpPlus.CommandsNext >= 4.3.0",
-      "DSharpPlus.Interactivity >= 4.3.0",
-      "DSharpPlus.VoiceNext >= 4.3.0",
+      "Concentus >= 1.1.7",
+      "DSharpPlus >= 4.4.0",
+      "DSharpPlus.CommandsNext >= 4.4.0",
+      "DSharpPlus.Interactivity >= 4.4.0",
+      "DSharpPlus.VoiceNext >= 4.4.0",
       "Discord.Addons.Hosting >= 5.2.0",
       "Discord.Addons.ShukaInteractive >= 1.1.1",
-      "Discord.Net >= 3.9.0",
-      "Discord.Net.Commands >= 3.9.0",
-      "Discord.Net.Core >= 3.9.0",
-      "Discord.Net.WebSocket >= 3.9.0",
+      "Discord.Net >= 3.10.0",
+      "Discord.Net.Commands >= 3.10.0",
+      "Discord.Net.Core >= 3.10.0",
+      "Discord.Net.WebSocket >= 3.10.0",
       "DiscordInteractivity >= 1.0.1.1",
-      "Google.Apis.YouTube.v3 >= 1.58.0.2874",
-      "NetEscapades.Configuration.Yaml >= 2.2.0",
+      "Google.Apis.YouTube.v3 >= 1.60.0.2945",
+      "NetEscapades.Configuration.Yaml >= 3.0.0",
       "VideoLibrary >= 3.2.3",
       "YouTubeSearch >= 2.2.6",
-      "YoutubeExplode >= 6.2.5"
+      "YoutubeExplode >= 6.2.12"
     ]
   },
   "packageFolders": {
@@ -7915,21 +7923,25 @@
             "target": "Package",
             "version": "[3.6.0, )"
           },
+          "Concentus": {
+            "target": "Package",
+            "version": "[1.1.7, )"
+          },
           "DSharpPlus": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.4.0, )"
           },
           "DSharpPlus.CommandsNext": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.4.0, )"
           },
           "DSharpPlus.Interactivity": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.4.0, )"
           },
           "DSharpPlus.VoiceNext": {
             "target": "Package",
-            "version": "[4.3.0, )"
+            "version": "[4.4.0, )"
           },
           "Discord.Addons.Hosting": {
             "target": "Package",
@@ -7941,19 +7953,19 @@
           },
           "Discord.Net": {
             "target": "Package",
-            "version": "[3.9.0, )"
+            "version": "[3.10.0, )"
           },
           "Discord.Net.Commands": {
             "target": "Package",
-            "version": "[3.9.0, )"
+            "version": "[3.10.0, )"
           },
           "Discord.Net.Core": {
             "target": "Package",
-            "version": "[3.9.0, )"
+            "version": "[3.10.0, )"
           },
           "Discord.Net.WebSocket": {
             "target": "Package",
-            "version": "[3.9.0, )"
+            "version": "[3.10.0, )"
           },
           "DiscordInteractivity": {
             "target": "Package",
@@ -7961,11 +7973,11 @@
           },
           "Google.Apis.YouTube.v3": {
             "target": "Package",
-            "version": "[1.58.0.2874, )"
+            "version": "[1.60.0.2945, )"
           },
           "NetEscapades.Configuration.Yaml": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[3.0.0, )"
           },
           "VideoLibrary": {
             "target": "Package",
@@ -7977,7 +7989,7 @@
           },
           "YoutubeExplode": {
             "target": "Package",
-            "version": "[6.2.5, )"
+            "version": "[6.2.12, )"
           }
         },
         "imports": [
